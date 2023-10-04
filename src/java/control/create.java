@@ -66,7 +66,7 @@ public class create extends HttpServlet {
         gender = request.getParameter("gender");
         dob = request.getParameter("DOB").replaceAll("-", "/");
         UserDao.createStudent(name, gender, dob);
-        response.sendRedirect("/student/list");
+        response.sendRedirect("/PT1/student/list");
     }
 
     /**
